@@ -1,0 +1,179 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #afeeee;
+}
+
+.card{
+    margin: 1.5rem;
+    box-shadow:rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 2rem;
+    width:650px;
+    height: 520px;
+    background-color: white;
+
+}
+
+.card-container{
+     
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.result{
+
+    width: 50%;
+    height: 520px;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(rgb(37, 40, 110), rgb(42, 90, 233)); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.result .tittle{
+
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.result .circle{
+
+    align-items: center;
+    width: 150px;
+    height: 150px ;
+    border-radius: 50%;
+    background: linear-gradient(rgb(125, 11, 231), rgb(83, 14, 161));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.circle h1{
+    color: white;
+}
+
+.circle p{
+    color: white;
+}
+
+.result b{
+    color: white;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.summary{
+
+    width: 58%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.rows{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.row{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+
+    color: white;
+    width: 250px;
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background: #29465B;
+}
+
+.row:nth-child(1){
+
+    width: 300px;
+    height: 60px;
+    background-color: rgb(255, 162, 162);
+
+}
+
+.row:nth-child(2){
+
+    width: 300px;
+    height: 60px;
+    background-color: rgb(240, 241, 131);
+
+}
+.row:nth-child(3){
+
+    width: 300px;
+    height: 60px;
+    background-color: rgb(177, 233, 163);
+
+}
+.row:nth-child(4){
+
+    width: 300px;
+    height: 60px;
+    background-color: rgb(182, 177, 255);
+
+}
+
+@media screen and (max-width:650px){
+
+    body{
+        align-items: flex-start;
+        background-color: white;
+
+    }
+    .card{
+        box-shadow: none;
+    }
+    .card-container{
+
+        flex-direction: column;
+
+    }
+    .result{
+
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+    }
+    .result .info{
+        width: 250px;
+
+    }
+    .summary{
+        width: 100%;
+    }
+}
